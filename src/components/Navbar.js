@@ -83,12 +83,13 @@ const Navbar = () => {
               sx={{
                 position: "absolute",
                 height: "70vh",
-                width: "100vw",
-                background: "#131A34",
+                width: "100%",
+                background: "lightgray",
                 zIndex: "9999",
                 display: sideBar ? "block" : "none",
                 padding: "10%",
                 boxSizing: "border-box",
+                left: "0",
               }}
             >
               <Box
@@ -97,12 +98,16 @@ const Navbar = () => {
                   marginBottom: "50px",
                 }}
               >
-                <img style={{ width: "200px" }} src={Logo} alt="Logo" />
+                <img
+                  style={{ width: "200px", color: "#ce1e24" }}
+                  src={Logo}
+                  alt="Logo"
+                />
                 <Box
                   sx={{ float: "right" }}
                   onClick={() => setSideBar(!sideBar)}
                 >
-                  <ClearIcon fontSize="large" />
+                  <ClearIcon fontSize="large" sx={{ color: "#ce1e24" }} />
                 </Box>
               </Box>
               <Box
