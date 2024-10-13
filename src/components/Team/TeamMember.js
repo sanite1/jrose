@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { Box, Typography, Link, Grid } from "@mui/material";
 import teamMembers from "../../data/teamMembers";
 import Navbar from "../Navbar";
-import TeamIntro from "../../assets/images/staffDetailIntro2.png";
+import TeamIntro from "../../assets/images/TeamIntro.png";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Footer from "../Footer";

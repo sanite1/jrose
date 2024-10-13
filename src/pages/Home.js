@@ -1,12 +1,8 @@
 import { Box } from "@mui/material";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { useInView } from "react-intersection-observer";
-import { keyframes } from "@emotion/react";
 import HomeIntro from "../components/Home/HomeIntro";
 import About from "../components/Home/About";
-import PracticeAreas from "../components/Home/PracticeAreas";
-import Values from "../components/AboutUs/Values";
 import { useEffect } from "react";
 import Newsletter from "../components/Home/Newsletter";
 import Book from "../components/Home/Book";

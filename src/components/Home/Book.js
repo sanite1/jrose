@@ -1,7 +1,6 @@
 import { Box, Grid, Link, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ExperienceImg from "../../assets/images/newExp.jpeg";
-import SmallMuhammad from "../../assets/images/smallMuhammad.png";
+import ExperienceImg from "../../assets/images/missionImg2.png";
 import "aos/dist/aos.css";
 import React from "react";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";

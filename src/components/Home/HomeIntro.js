@@ -2,8 +2,6 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Box, Typography, Link } from "@mui/material";
-import { useInView } from "react-intersection-observer";
-import { keyframes } from "@emotion/react";
 import homeIntro from "../../assets/images/jHomeIntro.jpg";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import AOS from "aos";

@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import AboutImg from "../../assets/images/about0.jpg";
+import AboutImg from "../../assets/images/experienceImg.png";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import AOS from "aos";
 import "aos/dist/aos.css";

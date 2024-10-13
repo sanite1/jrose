@@ -1,6 +1,4 @@
 import { Box, Divider, Grid, Typography } from "@mui/material";
-import Trainings from "../../data/trainings";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Certified from "../../assets/images/jCertified.png";
 import Industry from "../../assets/images/jIndustry.png";
 import Experienced from "../../assets/images/jExperienced.png";

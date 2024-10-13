@@ -1,6 +1,4 @@
 import { Box, Grid, Typography } from "@mui/material";
-import value1 from "../../assets/images/value1.png";
-import value2 from "../../assets/images/value2.png";
 import JMissionSec from "../../assets/images/jMissionSec.png";
 import AOS from "aos";
 import "aos/dist/aos.css";

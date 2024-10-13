@@ -1,10 +1,4 @@
 import { Box, Divider, Grid, Typography } from "@mui/material";
-import Trainings from "../../data/trainings";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import Certified from "../../assets/images/jCertified.png";
-import Industry from "../../assets/images/jIndustry.png";
-import Experienced from "../../assets/images/jExperienced.png";
-import Flexible from "../../assets/images/jFlexible.png";
 import { useTheme } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";

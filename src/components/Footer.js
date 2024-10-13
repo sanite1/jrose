@@ -3,24 +3,8 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { useState } from "react";
-import {
-  Facebook,
-  Info,
-  Instagram,
-  Inventory,
-  LinkedIn,
-  Person2,
-  Policy,
-  Twitter,
-} from "@mui/icons-material";
+import { Facebook, Info } from "@mui/icons-material";
 import React from "react";
-// import facebook from "../../assets/svgs/facebook.svg";
-// import twitter from "../../assets/svgs/twitter.svg";
-// import phone from "../../assets/svgs/phone.svg";
-// import mail from "../../assets/svgs/mail.svg";
-// import support from "../../assets/svgs/support.svg";
-// import linkedin from "../../assets/svgs/linkedin.svg";
-// import instagram from "../../assets/svgs/instagram.svg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";

@@ -5,9 +5,6 @@ import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState, useEffect } from "react";
 import ClearIcon from "@mui/icons-material/Clear";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import CallIcon from "@mui/icons-material/Call";
-import EmailIcon from "@mui/icons-material/Email";
 import Logo from "../assets/images/jRoseLogo.png";
 
 const Navbar = () => {

@@ -6,7 +6,6 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
 import { useTheme } from "@mui/material/styles";
-import PracticeAreaCards from "../components/Trainings/TrainingCards";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";

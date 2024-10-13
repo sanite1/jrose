@@ -1,11 +1,10 @@
 import { Box, Divider, Grid, Link, Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
-import TeamIntro from "../assets/images/TeamIntro2.png";
+import TeamIntro from "../assets/images/TeamIntro.png";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import TeamCards from "../components/Team/TeamCards";
 import Footer from "../components/Footer";
-import MissionImg from "../assets/images/mission00.jpg";
 import { useEffect } from "react";
 import { useTheme } from "@mui/material/styles";
 import AOS from "aos";

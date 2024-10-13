@@ -1,15 +1,7 @@
 import { Box, Grid, Link, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import smallPract1 from "../../assets/images/corp-com.jpg";
-import smallPract2 from "../../assets/images/smallPract2.png";
-import smallPract3 from "../../assets/images/risk.jpg";
-import smallPract4 from "../../assets/images/bigPract40.png";
-import practIcon1 from "../../assets/images/practIcon1.png";
-import practIcon2 from "../../assets/images/practIcon2.png";
-import practIcon3 from "../../assets/images/practIcon3.png";
-import practIcon4 from "../../assets/images/practIcon4.png";
 
-const PracticeAreas = () => {
+const Section = () => {
   return (
     <Box
       sx={{
@@ -17,7 +9,7 @@ const PracticeAreas = () => {
         padding: { xs: "50px 5%", md: "5%" },
       }}
     >
-      <Grid container>
+      {/* <Grid container>
         <Grid item xs={12} md={6}>
           <Box
             sx={{
@@ -315,9 +307,9 @@ const PracticeAreas = () => {
             </Grid>
           </Box>
         </Grid>
-      </Grid>
+      </Grid> */}
     </Box>
   );
 };
 
-export default PracticeAreas;
+export default Section;
