@@ -1,24 +1,25 @@
-import jHealth1 from "../assets/images/jHealth1.JPG";
-import jHealth2 from "../assets/images/jHealth2.JPG";
-import jHealth3 from "../assets/images/jHealth3.JPG";
-import jHealth4 from "../assets/images/jHealth4.JPG";
-import jHealth5 from "../assets/images/jHealth5.JPG";
-import jHealth6 from "../assets/images/jHealth6.JPG";
-import jHealth7 from "../assets/images/jHealth7.JPG";
-import jHealth8 from "../assets/images/jHealth8.JPG";
-import jHealth9 from "../assets/images/jHealth9.JPG";
-import jHealth10 from "../assets/images/jHealth10.JPG";
-import jHealth11 from "../assets/images/jHealth11.JPG";
-import jHealth12 from "../assets/images/jHealth12.JPG";
-import jCatering1 from "../assets/images/jCatering1.JPG";
-import jCatering2 from "../assets/images/jCatering2.JPG";
-import jCatering3 from "../assets/images/jCatering3.JPG";
-import jCatering4 from "../assets/images/jCatering4.JPG";
-import jCatering5 from "../assets/images/jCatering5.JPG";
-import jChildcare1 from "../assets/images/jChildcare1.JPG";
-import jChildcare2 from "../assets/images/jChildcare2.JPG";
-import jChildcare3 from "../assets/images/jChildcare3.JPG";
-import jChildcare4 from "../assets/images/jChildcare4.JPG";
+import jHealth1 from "../assets/images/jHealth1.png";
+import jHealth2 from "../assets/images/jHealth2.png";
+import jHealth3 from "../assets/images/jHealth3.png";
+import jHealth4 from "../assets/images/jHealth4.png";
+import jHealth5 from "../assets/images/jHealth5.png";
+import jHealth6 from "../assets/images/jHealth6.png";
+import jHealth7 from "../assets/images/jHealth7.png";
+import jHealth8 from "../assets/images/jHealth8.png";
+import jHealth9 from "../assets/images/jHealth9.png";
+import jHealth10 from "../assets/images/jHealth10.png";
+import jHealth11 from "../assets/images/jHealth11.png";
+import jHealth12 from "../assets/images/jHealth12.png";
+import jHealth13 from "../assets/images/jHealth13.png";
+import jCatering1 from "../assets/images/jCatering1.png";
+import jCatering2 from "../assets/images/jCatering2.png";
+import jCatering3 from "../assets/images/jCatering3.png";
+import jCatering4 from "../assets/images/jCatering4.png";
+import jCatering5 from "../assets/images/jCatering5.png";
+import jChildcare1 from "../assets/images/jChildcare1.png";
+import jChildcare2 from "../assets/images/jChildcare2.png";
+import jChildcare3 from "../assets/images/jChildcare3.png";
+import jChildcare4 from "../assets/images/jChildcare4.png";
 
 const Trainings = [
   {
@@ -154,7 +155,7 @@ const Trainings = [
   },
   {
     id: 13,
-    image: jHealth1,
+    image: jHealth13,
     name: "Care Agency Training Packages (CQC Compliant)",
     link: "/trainings/care-agency-training-packages-(cqc-compliant)",
     desc: "Essential for care agencies, these packages cover key topics from First Aid to Safeguarding and managing medical conditions.",
