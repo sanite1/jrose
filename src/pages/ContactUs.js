@@ -61,7 +61,6 @@ const ContactUs = () => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
   const [details, setDetails] = useState("");
   const onSubmit = () => {
     const mailtoLink = `mailto:info@jrosetraining&consulting.co.uk?subject=Case%20Consultation&body=Name:%20${encodeURIComponent(
@@ -320,7 +319,7 @@ const ContactUs = () => {
                   <Box
                     sx={{
                       top: { xs: "0", md: "-100px" }, // Adjust this value as needed
-                      boxSizing: { xs: "border-box", md: "content-box" },
+                      // boxSizing: { xs: "border-box", md: "content-box" },
                       padding: "10%",
                       width: "100%",
                       // backgroundImage: `url(${footerField})`,

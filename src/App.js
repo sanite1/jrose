@@ -12,6 +12,9 @@ import Loader from "./components/Loader";
 import FAQ from "./pages/FAQs";
 import Trainings from "./pages/Trainings";
 import Consultancy from "./pages/Consultancy";
+import Blogs from "./pages/Blogs";
+import BlogPost from "./pages/BlogPost";
+import Career from "./pages/Career";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -42,6 +45,9 @@ function App() {
             <Route exact path="/about-us" element={<AboutUs />} />
             <Route exact path="/contact-us" element={<ContactUs />} />
             <Route exact path="/faqs" element={<FAQ />} />
+            <Route exact path="/career" element={<Career />} />
+            <Route exact path="/blogs" element={<Blogs />} />
+            <Route exact path="/blogs/:id" element={<BlogPost />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Router>

@@ -35,7 +35,7 @@ const TeamCards = () => {
                   left: 0,
                   width: "100%",
                   height: "100%",
-                  bgcolor: "rgba(206, 30, 36, 0.3)", // Transparent background color
+                  bgcolor: "rgba(206, 30, 36, 0.3)",
                   color: "white",
                   display: "flex",
                   justifyContent: "center",

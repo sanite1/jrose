@@ -1,4 +1,3 @@
-// src/pages/TeamMember.js
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Box, Typography, Link, Grid } from "@mui/material";
@@ -158,34 +157,6 @@ const TeamMember = () => {
                 {member}
               </Typography>
             ))}
-            {/* <Typography
-              sx={{
-                fontSize: "16px",
-                fontFamily: '"Source Sans Pro", sans-serif',
-                fontWeight: 700,
-                width: "fit-content",
-                marginBottom: "10px",
-                marginTop: "20px",
-                textAlign: "center",
-                borderBottom: "5px solid #E0A422",
-              }}
-            >
-              Expertise
-            </Typography>
-
-            {member.expertise.map((member) => (
-              <Typography
-                key={member.id}
-                sx={{
-                  fontSize: "16px",
-                  fontFamily: '"Source Sans Pro", sans-serif',
-                  fontWeight: 300,
-                  marginBottom: "10px",
-                }}
-              >
-                {member}
-              </Typography>
-            ))} */}
           </Grid>
         </Grid>
       </Box>

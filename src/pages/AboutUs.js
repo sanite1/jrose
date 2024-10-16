@@ -40,17 +40,15 @@ const AboutUs = () => {
       <Box
         sx={{
           backgroundImage: `url(${AboutUsIntro})`,
-          backgroundSize: "cover", // Cover the entire box
-          backgroundPosition: "center", // Center the image
-          backgroundRepeat: "no-repeat", // Prevent tiling
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           width: "100%",
           height: "65vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
-          // borderBottomLeftRadius: "550px 150px",
-          // borderBottomRightRadius: "550px 150px",
         }}
       >
         <Box
@@ -65,7 +63,7 @@ const AboutUs = () => {
             padding: "0 5%",
           }}
         >
-          <Box>
+          <Box data-aos="fade-up">
             <Typography
               variant="body2"
               color="#fff"
@@ -94,13 +92,14 @@ const AboutUs = () => {
           </Box>
         </Box>
       </Box>
+
+      {/* About us */}
       <Box
         sx={{
           width: "80%",
           margin: "50px auto",
         }}
       >
-        {/* About us */}
         <About />
       </Box>
 

@@ -1,16 +1,17 @@
 import { Box, Link, Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
-import ContactIntro from "../assets/images/contactIntro.png";
+import ConsultancyImage from "../assets/images/jConsultancy.avif";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
+import { useTheme } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
-import { useTheme } from "@mui/material/styles";
+import BlogCards from "../components/Blogs/BlogCards";
 
-const Error = () => {
+const Blogs = () => {
   React.useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -19,7 +20,7 @@ const Error = () => {
       Home
     </Link>,
     <Typography key="2" color="#ce1e24" sx={{ fontWeight: "600" }}>
-      Page Not Found
+      Blogs
     </Typography>,
   ];
   useEffect(() => {
@@ -32,7 +33,7 @@ const Error = () => {
 
       <Box
         sx={{
-          backgroundImage: `url(${ContactIntro})`,
+          backgroundImage: `url(${ConsultancyImage})`,
           backgroundSize: "cover", // Cover the entire box
           backgroundPosition: "center", // Center the image
           backgroundRepeat: "no-repeat", // Prevent tiling
@@ -52,8 +53,7 @@ const Error = () => {
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-            backgroundColor: "rgba(128, 128, 128, 0.7)",
-            padding: "0 5%",
+            backgroundColor: "rgba(128, 128, 128, 0.2)",
           }}
         >
           <Box data-aos="fade-up">
@@ -70,7 +70,24 @@ const Error = () => {
                 fontWeight: "700",
               }}
             >
-              ERROR 404
+              Blogs
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: {
+                  xs: theme.typography.body2.fontSize,
+                  md: theme.typography.body1.fontSize,
+                },
+                // width: { xs: "90%", md: "70%" },
+                margin: "auto",
+                marginBottom: "20px",
+                fontFamily: '"Source Sans Pro", sans-serif',
+                letterSpacing: "1px",
+                color: "#fff",
+              }}
+            >
+              Stay updated with our latest insights, industry trends, and tips
+              from our experts.
             </Typography>
             <Breadcrumbs
               separator={<NavigateNextIcon fontSize="small" />}
@@ -85,9 +102,19 @@ const Error = () => {
           </Box>
         </Box>
       </Box>
+      <Box
+        sx={{
+          width: "80%",
+          margin: "50px auto",
+        }}
+      >
+        {/* CARDS */}
+        <BlogCards />
+      </Box>
+
       <Footer />
     </Box>
   );
 };
 
-export default Error;
+export default Blogs;

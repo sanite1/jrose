@@ -2,10 +2,14 @@ import { Box, Grid, Link, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ExperienceImg from "../../assets/images/missionImg2.png";
 import "aos/dist/aos.css";
+import AOS from "aos";
 import React from "react";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const Book = () => {
+  React.useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <Box>
       <Grid container spacing={4}>
@@ -158,7 +162,7 @@ const Book = () => {
                   }}
                 >
                   <Link
-                    href="/contact-us"
+                    href="/consultancy"
                     color="inherit"
                     underline="none"
                     sx={{

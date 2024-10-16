@@ -1,17 +1,12 @@
-import { Box, Divider, Grid, Link, TextField, Typography } from "@mui/material";
+import { Box, Divider, Grid, Link, Typography } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import { useState } from "react";
 import { Facebook, Info } from "@mui/icons-material";
 import React from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import footerlogo from "../assets/images/jRoseLogo2.png";
-import { useForm, Controller } from "react-hook-form";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
 import { useLocation } from "react-router-dom";
 
 const Footer = () => {
@@ -26,58 +21,6 @@ const Footer = () => {
     color: "#ce1e24",
     fontWeight: "bold",
     textDecoration: "none",
-  };
-  const textFieldStyles = {
-    "& .MuiInput-root": {
-      color: "#fff",
-      fontFamily: '"Source Sans Pro", sans-serif',
-      fontSize: "14px",
-      padding: "5px",
-      marginTop: "20px",
-      "&:before": {
-        borderColor: "#fff",
-        borderWidth: "1px",
-      },
-      "&:after": {
-        borderColor: "#fff",
-        borderWidth: "1px",
-      },
-      ":hover:not(.Mui-focused)": {
-        "&:before": {
-          borderColor: "#fff",
-          borderWidth: "1px",
-        },
-      },
-    },
-    // Label
-    "& .MuiInputLabel-standard": {
-      color: "#fff",
-      "&.Mui-focused": {
-        color: "fff",
-      },
-    },
-  };
-
-  const schema = yup.object().shape({
-    name: yup.string().required("Name Is required"),
-    email: yup.string().required("Email Is required"),
-    details: yup.string().required("Message Is required"),
-  });
-
-  const { trigger, control } = useForm({
-    resolver: yupResolver(schema),
-  });
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [details, setDetails] = useState("");
-  const onSubmit = () => {
-    const mailtoLink = `mailto:info@lexadepts.com?subject=Case%20Consultation&body=Name:%20${encodeURIComponent(
-      name
-    )}%0AEmail:%20${encodeURIComponent(
-      email
-    )}%0ADetails:%20${encodeURIComponent(details)}`;
-    window.location.href = mailtoLink;
   };
 
   return (
@@ -319,6 +262,46 @@ const Footer = () => {
                       color="white"
                     >
                       Company
+                    </Typography>
+                    <Typography
+                      color="white"
+                      sx={{
+                        mt: 2,
+                        fontSize: "14px",
+                        width: "100%",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                        fontWeight: 600,
+                      }}
+                    >
+                      <Link
+                        href="/career"
+                        style={
+                          currentPath === "/career"
+                            ? activeLinkStyle
+                            : linkStyle
+                        }
+                      >
+                        Career
+                      </Link>
+                    </Typography>
+                    <Typography
+                      color="white"
+                      sx={{
+                        mt: 2,
+                        fontSize: "14px",
+                        width: "100%",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                        fontWeight: 600,
+                      }}
+                    >
+                      <Link
+                        href="/blogs"
+                        style={
+                          currentPath === "/blogs" ? activeLinkStyle : linkStyle
+                        }
+                      >
+                        Blogs
+                      </Link>
                     </Typography>
                     <Typography
                       color="white"

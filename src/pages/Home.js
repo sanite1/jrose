@@ -9,6 +9,7 @@ import Book from "../components/Home/Book";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
+import LogoCarousel from "../components/Home/ClienteleCarousel";
 
 const Home = () => {
   React.useEffect(() => {
@@ -51,13 +52,20 @@ const Home = () => {
         <Box
           data-aos="fade-up"
           sx={{
-            // width: "80%",
             margin: "auto",
             marginTop: "50px",
           }}
         >
           <Newsletter />
         </Box>
+      </Box>
+
+      <Box
+        sx={{
+          marginTop: "50px",
+        }}
+      >
+        <LogoCarousel />
       </Box>
 
       <Box
@@ -70,16 +78,14 @@ const Home = () => {
         <Book />
       </Box>
 
+      {/* Footer  */}
       <Box
-        data-aos="fade-up"
         sx={{
           marginTop: "50px",
         }}
       >
         <Footer />
       </Box>
-
-      {/* Footer  */}
     </Box>
   );
 };

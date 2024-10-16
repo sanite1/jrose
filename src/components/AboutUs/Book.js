@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Box, Typography, Link } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { useTheme } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -11,7 +10,6 @@ function Book() {
   React.useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-  const theme = useTheme();
 
   return (
     <Box
@@ -53,14 +51,9 @@ function Book() {
           <Typography
             variant="body1"
             sx={{
-              fontSize: {
-                xs: theme.typography.body2.fontSize,
-                md: theme.typography.body1.fontSize,
-              },
               width: { xs: "90%", md: "70%" },
               margin: "auto",
               marginBottom: "20px",
-              fontFamily: "sans-serif",
               fontSize: "16px",
               fontFamily: '"Source Sans Pro", sans-serif',
               fontWeight: 400,
@@ -75,7 +68,7 @@ function Book() {
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Link
-              href="/contact-us"
+              href="/consultancy"
               color="inherit"
               underline="none"
               sx={{

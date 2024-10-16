@@ -1,6 +1,6 @@
-import { Box, Grid, Link, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import { Button, TextField } from "@mui/material";
+import { TextField } from "@mui/material";
 import Subscribe from "../../assets/images/Email.png";
 import { Controller, useForm } from "react-hook-form";
 import * as yup from "yup";

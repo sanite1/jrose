@@ -1,4 +1,4 @@
-import { Box, Grid, Link } from "@mui/material";
+import { Box, Link } from "@mui/material";
 import { useLocation } from "react-router-dom";
 import * as React from "react";
 import Typography from "@mui/material/Typography";
@@ -14,9 +14,9 @@ const Navbar = () => {
   const [bgColor, setBgColor] = useState("#fff");
   const handleScroll = () => {
     if (window.scrollY > 0) {
-      setBgColor("#fff"); // Background color when scrolled
+      setBgColor("#fff");
     } else {
-      setBgColor("#fff"); // Background color when at the top
+      setBgColor("#fff");
     }
   };
   useEffect(() => {
@@ -44,7 +44,7 @@ const Navbar = () => {
       document.body.style.overflow = "auto";
     }
     return () => {
-      document.body.style.overflow = "auto"; // Cleanup when component unmounts
+      document.body.style.overflow = "auto";
     };
   }, [sideBar]);
 
@@ -191,6 +191,42 @@ const Navbar = () => {
                     Consultancy Services
                   </Link>
                 </Typography>
+                <Typography
+                  variant="body"
+                  sx={{
+                    color: "#fff",
+                    marginBottom: "20px",
+                    fontFamily: '"Source Sans Pro", sans-serif',
+                    width: "100%",
+                  }}
+                >
+                  <Link
+                    href="/career"
+                    style={
+                      currentPath === "/career" ? activeLinkStyle : linkStyle
+                    }
+                  >
+                    Career
+                  </Link>
+                </Typography>
+                <Typography
+                  variant="body"
+                  sx={{
+                    color: "#fff",
+                    marginBottom: "20px",
+                    fontFamily: '"Source Sans Pro", sans-serif',
+                    width: "100%",
+                  }}
+                >
+                  <Link
+                    href="/blogs"
+                    style={
+                      currentPath === "/blogs" ? activeLinkStyle : linkStyle
+                    }
+                  >
+                    Blogs
+                  </Link>
+                </Typography>
                 <Link
                   href="/contact-us"
                   color="black"
@@ -224,9 +260,10 @@ const Navbar = () => {
                 alignItems: "center",
               }}
             >
-              <img
-                style={{
-                  width: "200px",
+              <Box
+                component="img"
+                sx={{
+                  width: { xs: "200px", md: "100%" },
                 }}
                 src={Logo}
                 alt="Logo"
@@ -238,7 +275,7 @@ const Navbar = () => {
                 visibility: { xs: "hidden", md: "visible" },
                 justifyContent: "space-around",
                 alignItems: "center",
-                minWidth: "70%",
+                minWidth: "90%",
                 margin: "auto",
               }}
             >
@@ -306,6 +343,38 @@ const Navbar = () => {
                   }
                 >
                   CONSULTANCY SERVICES
+                </Link>
+              </Typography>
+              <Typography
+                variant="body2"
+                color="#FFF"
+                sx={{
+                  fontSize: "14px",
+                  fontFamily: '"Source Sans Pro", sans-serif',
+                }}
+              >
+                <Link
+                  href="/career"
+                  style={
+                    currentPath === "/career" ? activeLinkStyle : linkStyle
+                  }
+                >
+                  CAREER
+                </Link>
+              </Typography>
+              <Typography
+                variant="body2"
+                color="#FFF"
+                sx={{
+                  fontSize: "14px",
+                  fontFamily: '"Source Sans Pro", sans-serif',
+                }}
+              >
+                <Link
+                  href="/blogs"
+                  style={currentPath === "/blogs" ? activeLinkStyle : linkStyle}
+                >
+                  BLOGS
                 </Link>
               </Typography>
             </Box>

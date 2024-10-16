@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, Link, Typography } from "@mui/material";
+import { Box, Divider, Link, Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
 import TeamIntro from "../assets/images/TeamIntro.png";
 import Breadcrumbs from "@mui/material/Breadcrumbs";

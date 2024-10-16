@@ -1,11 +1,14 @@
 import { Box, Grid, Link, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ExperienceImg from "../../assets/images/experienceImg.png";
-// import AOS from "aos";
+import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
 
-const Experience = () => {
+const About = () => {
+  React.useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <Box>
       <Grid container spacing={4}>
@@ -115,7 +118,6 @@ const Experience = () => {
                 >
                   <Link
                     href="/about-us"
-                    color="inherit"
                     underline="none"
                     sx={{
                       display: "flex",
@@ -145,4 +147,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default About;

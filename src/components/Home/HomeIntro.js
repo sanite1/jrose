@@ -10,6 +10,9 @@ import "aos/dist/aos.css";
 import { useTheme } from "@mui/material/styles";
 
 function HomeIntro() {
+  React.useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const theme = useTheme();
 
   return (
@@ -19,9 +22,9 @@ function HomeIntro() {
         width: "100%",
         height: "100vh",
         backgroundImage: `url(${homeIntro})`,
-        backgroundSize: "cover", // Cover the entire box
-        backgroundPosition: "center", // Center the image
-        backgroundRepeat: "no-repeat", // Prevent tiling
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <Box
@@ -75,7 +78,7 @@ function HomeIntro() {
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Link
-              href="/contact-us"
+              href="/trainings"
               color="inherit"
               underline="none"
               sx={{

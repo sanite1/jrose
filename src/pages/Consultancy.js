@@ -46,7 +46,6 @@ const Consultancy = () => {
         }}
       >
         <Box
-          data-aos="fade-up"
           sx={{
             width: "100%",
             height: "65vh",
@@ -57,7 +56,7 @@ const Consultancy = () => {
             backgroundColor: "rgba(128, 128, 128, 0.2)",
           }}
         >
-          <Box>
+          <Box data-aos="fade-up">
             <Typography
               variant="body2"
               color="#fff"
