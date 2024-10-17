@@ -63,7 +63,7 @@ const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [details, setDetails] = useState("");
   const onSubmit = () => {
-    const mailtoLink = `mailto:info@jrosetraining&consulting.co.uk?subject=Case%20Consultation&body=Name:%20${encodeURIComponent(
+    const mailtoLink = `mailto:info@jrosetrainingconsultancy.co.uk?subject=Case%20Consultation&body=Name:%20${encodeURIComponent(
       name
     )}%0AEmail:%20${encodeURIComponent(
       email
@@ -256,7 +256,7 @@ const ContactUs = () => {
                                 fontWeight: 400,
                               }}
                             >
-                              +44 123 456 7890
+                              +44 793 047 0808
                             </Typography>
                           </Box>
                         </Box>
@@ -303,7 +303,7 @@ const ContactUs = () => {
                                 fontWeight: 400,
                               }}
                             >
-                              info@jrosetraining&consulting.co.uk
+                              info@jrosetrainingconsultancy.co.uk
                             </Typography>
                           </Box>
                         </Box>

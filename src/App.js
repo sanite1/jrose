@@ -15,6 +15,7 @@ import Consultancy from "./pages/Consultancy";
 import Blogs from "./pages/Blogs";
 import BlogPost from "./pages/BlogPost";
 import Career from "./pages/Career";
+import BidWriting from "./pages/BidWriting";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -41,6 +42,7 @@ function App() {
             <Route exact path="/team" element={<Team />} />
             <Route exact path="/team/:id" element={<TeamMember />} />
             <Route exact path="/trainings" element={<Trainings />} />
+            <Route exact path="/bid-writing" element={<BidWriting />} />
             <Route exact path="/consultancy" element={<Consultancy />} />
             <Route exact path="/about-us" element={<AboutUs />} />
             <Route exact path="/contact-us" element={<ContactUs />} />

@@ -181,6 +181,26 @@ const Navbar = () => {
                   }}
                 >
                   <Link
+                    href="/bid-writing"
+                    style={
+                      currentPath === "/bid-writing"
+                        ? activeLinkStyle
+                        : linkStyle
+                    }
+                  >
+                    Bid Writing
+                  </Link>
+                </Typography>
+                <Typography
+                  variant="body"
+                  sx={{
+                    color: "#fff",
+                    marginBottom: "20px",
+                    fontFamily: '"Source Sans Pro", sans-serif',
+                    width: "100%",
+                  }}
+                >
+                  <Link
                     href="/consultancy"
                     style={
                       currentPath === "/consultancy"
@@ -326,6 +346,23 @@ const Navbar = () => {
                   }
                 >
                   TRAININGS
+                </Link>
+              </Typography>
+              <Typography
+                variant="body2"
+                color="#FFF"
+                sx={{
+                  fontSize: "14px",
+                  fontFamily: '"Source Sans Pro", sans-serif',
+                }}
+              >
+                <Link
+                  href="/bid-writing"
+                  style={
+                    currentPath === "/bid-writing" ? activeLinkStyle : linkStyle
+                  }
+                >
+                  BID WRITING
                 </Link>
               </Typography>
               <Typography

@@ -155,13 +155,20 @@ const ChildcareCards = () => {
                 <Button
                   variant="outlined"
                   sx={{
-                    mt: 2,
                     fontSize: "14px",
-                    width: "100%",
                     color: "#ce1e24",
                     fontFamily: '"Source Sans Pro", sans-serif',
                     fontWeight: 600,
                     borderColor: "#ce1e24",
+                    padding: 0,
+                    border: 0,
+                    textAlign: "left",
+                    width: "fit-content",
+                    "&:hover": {
+                      background: "none",
+                      border: "0",
+                      cursor: "pointer",
+                    },
                   }}
                   onClick={() => handleClickOpen(item)}
                 >

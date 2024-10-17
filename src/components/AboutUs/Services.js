@@ -1,4 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
+import StarIcon from "@mui/icons-material/Star";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
@@ -7,124 +8,192 @@ const Services = () => {
   React.useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
   return (
     <Box
       sx={{
-        padding: "50px 0",
-        background: `#1d272c`,
+        padding: "80px 0",
+        backgroundColor: "#0f1417",
         color: "#fff",
+        boxSizing: "border-box",
+        textAlign: "center",
       }}
     >
-      <Box
-        data-aos="fade-up"
-        sx={{
-          width: { xs: "90%", md: "80%" },
-          margin: "auto",
-          // padding: "50px 0",
-        }}
-      >
+      {/* Header Section */}
+      <Box data-aos="fade-up" sx={{ marginBottom: "40px" }}>
+        <Typography
+          variant="h4"
+          sx={{
+            fontWeight: 700,
+            fontFamily: '"Source Sans Pro", sans-serif',
+            borderBottom: "3px solid #ce1e24",
+            display: "inline-block",
+            marginBottom: "10px",
+            paddingBottom: "5px",
+          }}
+        >
+          What We Do
+        </Typography>
         <Typography
           sx={{
-            fontSize: "16px",
+            marginTop: "10px",
+            width: { xs: "90%", md: "60%" },
+            marginX: "auto",
+            fontSize: "18px",
+            lineHeight: 1.8,
             fontFamily: '"Source Sans Pro", sans-serif',
-            fontWeight: 400,
-            borderBottom: "1px solid #ce1e24",
-            width: "fit-content",
-            margin: "auto",
-            marginBottom: "20px",
-            textAlign: "center",
           }}
         >
-          Our Services
+          Our services encompass a wide range of training programs designed to
+          enhance workplace safety, efficiency, and professionalism, tailored
+          for various industries.
         </Typography>
       </Box>
-      <Grid container sx={{ width: "80%", margin: "auto" }}>
-        <Grid
-          data-aos="fade-right"
-          item
-          xs={12}
-          sm={6}
-          sx={{
-            width: { xs: "100%" },
-          }}
-        >
+
+      {/* Service Overview Section */}
+      <Grid container sx={{ width: { xs: "90%", md: "80%" }, margin: "auto" }}>
+        {/* Training Programs Column */}
+        <Grid item xs={12} md={6} data-aos="fade-right">
           <Box
             sx={{
-              width: { xs: "100%", md: "70%" },
-              margin: "auto",
-              padding: { xs: "20px" },
-              backgroundColor: "rgba(206, 30, 36, 0.3)",
-              borderRadius: "20px",
+              backgroundColor: "rgba(206, 30, 36, 0.2)",
+              borderRadius: "15px",
+              padding: "30px",
               boxSizing: "border-box",
+              height: "100%",
+              width: { xs: "100%", md: "90%" },
+              marginX: "auto",
+              textAlign: "left",
             }}
           >
             <Typography
-              sx={{
-                fontSize: "30px",
-                fontFamily: '"Source Sans Pro", sans-serif',
-                fontWeight: 700,
-                margin: "10px 0",
-                textAlign: "center",
-              }}
+              variant="h5"
+              sx={{ fontWeight: 700, marginBottom: "15px" }}
             >
-              Training
+              Training Programs We Offer
             </Typography>
-            <Typography
-              sx={{
-                fontSize: "30px",
-                fontFamily: '"Source Sans Pro", sans-serif',
-                fontWeight: 700,
-                textAlign: { xs: "justify", md: "center" },
-              }}
-            >
-              Services
-            </Typography>
+            {[
+              "First Aid Courses",
+              "General Health and Safety",
+              "Infection Control",
+              "Office Skills (e.g., Leadership, Cybersecurity)",
+              "Mental Health in the Workplace",
+              "Risk Assessment",
+              "Staff Induction & Time Management",
+            ].map((service, index) => (
+              <Box
+                key={index}
+                sx={{
+                  display: "flex",
+                  alignItems: "start",
+                  marginBottom: "10px",
+                }}
+              >
+                <StarIcon sx={{ color: "#ce1e24", marginRight: "10px" }} />
+                <Typography
+                  sx={{
+                    fontSize: "16px",
+                    fontFamily: '"Source Sans Pro", sans-serif',
+                  }}
+                >
+                  {service}
+                </Typography>
+              </Box>
+            ))}
           </Box>
         </Grid>
-        <Grid
-          data-aos="fade-left"
-          item
-          xs={12}
-          sm={6}
-          sx={{
-            width: { xs: "100%" },
-            marginTop: { xs: "20px", md: "0" },
-          }}
-        >
+
+        {/* Specialized Sectors Column */}
+        <Grid item xs={12} md={6} data-aos="fade-left">
           <Box
             sx={{
-              width: { xs: "100%", md: "70%" },
-              margin: "auto",
-              padding: { xs: "20px" },
-              backgroundColor: "rgba(206, 30, 36, 0.3)",
-              borderRadius: "20px",
+              backgroundColor: "rgba(206, 30, 36, 0.2)",
+              borderRadius: "15px",
+              padding: "30px",
               boxSizing: "border-box",
+              height: "100%",
+              width: { xs: "100%", md: "90%" },
+              marginX: "auto",
+              marginTop: { xs: "20px", md: "0" },
+              textAlign: "left",
             }}
           >
             <Typography
-              sx={{
-                fontSize: "30px",
-                fontFamily: '"Source Sans Pro", sans-serif',
-                fontWeight: 700,
-                margin: "10px 0",
-                textAlign: "center",
-              }}
+              variant="h5"
+              sx={{ fontWeight: 700, marginBottom: "15px" }}
             >
-              Consultancy
+              Specialized Sectors Covered
             </Typography>
-            <Typography
-              sx={{
-                fontSize: "30px",
-                fontFamily: '"Source Sans Pro", sans-serif',
-                fontWeight: 700,
-                textAlign: { xs: "justify", md: "center" },
-              }}
-            >
-              Services
-            </Typography>
+            {[
+              "Healthcare",
+              "Construction",
+              "Governmental Institutions",
+              "Fire Safety",
+              "Food Safety",
+              "Transport",
+            ].map((sector, index) => (
+              <Box
+                key={index}
+                sx={{
+                  display: "flex",
+                  alignItems: "start",
+                  marginBottom: "10px",
+                }}
+              >
+                <StarIcon sx={{ color: "#ce1e24", marginRight: "10px" }} />
+                <Typography
+                  sx={{
+                    fontSize: "16px",
+                    fontFamily: '"Source Sans Pro", sans-serif',
+                  }}
+                >
+                  {sector}
+                </Typography>
+              </Box>
+            ))}
           </Box>
         </Grid>
       </Grid>
+
+      {/* Why Choose Us Section */}
+      <Box
+        data-aos="fade-up"
+        sx={{
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          borderRadius: "15px",
+          padding: "40px 20px",
+          marginTop: "40px",
+          width: { xs: "90%", md: "60%" },
+          marginX: "auto",
+          textAlign: "left",
+          boxSizing: "border-box",
+        }}
+      >
+        <Typography variant="h5" sx={{ fontWeight: 700, marginBottom: "15px" }}>
+          Why Choose Us?
+        </Typography>
+        {[
+          "Internationally recognised & accredited training courses",
+          "Online, Classroom & Blended Training Options",
+          "Bespoke Training Packages",
+          "Engaging & Informative Sessions",
+        ].map((reason, index) => (
+          <Box
+            key={index}
+            sx={{ display: "flex", alignItems: "start", marginBottom: "10px" }}
+          >
+            <StarIcon sx={{ color: "#ce1e24", marginRight: "10px" }} />
+            <Typography
+              sx={{
+                fontSize: "16px",
+                fontFamily: '"Source Sans Pro", sans-serif',
+              }}
+            >
+              {reason}
+            </Typography>
+          </Box>
+        ))}
+      </Box>
     </Box>
   );
 };

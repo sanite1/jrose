@@ -182,14 +182,14 @@ const Footer = () => {
                       }}
                     >
                       <Link
-                        href="/consultancy"
+                        href="/trainings"
                         style={
-                          currentPath === "/consultancy"
+                          currentPath === "/trainings"
                             ? activeLinkStyle
                             : linkStyle
                         }
                       >
-                        Consultancy Services
+                        Trainings
                       </Link>
                     </Typography>
                     <Typography
@@ -203,14 +203,35 @@ const Footer = () => {
                       }}
                     >
                       <Link
-                        href="/trainings"
+                        href="/bid-writing"
                         style={
-                          currentPath === "/trainings"
+                          currentPath === "/bid-writing"
                             ? activeLinkStyle
                             : linkStyle
                         }
                       >
-                        Trainings
+                        Bid Writing
+                      </Link>
+                    </Typography>
+                    <Typography
+                      color="white"
+                      sx={{
+                        mt: 2,
+                        fontSize: "14px",
+                        width: "100%",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                        fontWeight: 600,
+                      }}
+                    >
+                      <Link
+                        href="/consultancy"
+                        style={
+                          currentPath === "/consultancy"
+                            ? activeLinkStyle
+                            : linkStyle
+                        }
+                      >
+                        Consultancy Services
                       </Link>
                     </Typography>
                     <Typography
@@ -375,7 +396,7 @@ const Footer = () => {
                     fontWeight: 400,
                   }}
                 >
-                  +44 123 456 7890
+                  +44 793 047 0808
                 </Typography>
               </Box>
             </Box>
@@ -392,7 +413,7 @@ const Footer = () => {
                     fontWeight: 400,
                   }}
                 >
-                  info@jrosetraining&consulting.co.uk
+                  info@jrosetrainingconsultancy.co.uk
                 </Typography>
               </Box>
             </Box>

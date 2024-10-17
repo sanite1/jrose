@@ -1,20 +1,22 @@
-import { Box, Link, Divider, Typography } from "@mui/material";
+import { Box, Link, Divider, Typography, Grid } from "@mui/material";
 import Navbar from "../components/Navbar";
 import AboutUsIntro from "../assets/images/jAboutUs.webp";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import TeamCards from "../components/Team/TeamCards";
+// import TeamCards from "../components/Team/TeamCards";
 import Footer from "../components/Footer";
 import Values from "../components/AboutUs/Values";
 import { useEffect } from "react";
 import { useTheme } from "@mui/material/styles";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import About from "../components/AboutUs/About";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
 import Services from "../components/AboutUs/Services";
 import Book from "../components/AboutUs/Book";
+import jessica from "../assets/images/jessica.png";
+import LogoCarousel from "../components/Home/ClienteleCarousel";
 
 const AboutUs = () => {
   React.useEffect(() => {
@@ -127,45 +129,101 @@ const AboutUs = () => {
             textAlign: "center",
           }}
         >
-          MEET THE TEAM
+          MEET THE DIRECTOR
         </Typography>
 
-        <TeamCards />
-
         <Box
-          sx={{ display: "flex", justifyContent: "center", margin: "50px 0" }}
+          sx={{
+            width: "80%",
+            margin: "50px auto",
+          }}
         >
-          <Link
-            href="/team"
-            color="inherit"
-            underline="none"
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              background: "#ce1e24",
-              outline: "none",
-              borderRadius: "10px",
-              padding: "10px 24px",
-              letterSpacing: "1px",
-              fontSize: "14px",
-              fontFamily: '"Source Sans Pro", sans-serif',
-              fontWeight: 300,
-              color: "#fff",
-            }}
-          >
-            Learn More <ArrowForwardIosIcon fontSize="smal" marginLeft="10px" />
-          </Link>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6} data-aos="fade-right">
+              <img
+                src={jessica}
+                alt="Jessica Rose Thompson"
+                style={{ width: "100%" }}
+              />
+              <Typography
+                sx={{
+                  fontSize: "16px",
+                  fontFamily: '"Source Sans Pro", sans-serif',
+                  fontWeight: 600,
+                  textAlign: "center",
+                }}
+              >
+                Jessica Rose Thompson
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "16px",
+                  fontFamily: '"Source Sans Pro", sans-serif',
+                  fontWeight: 700,
+                  color: "#ce1e24",
+                  textAlign: "center",
+                }}
+              >
+                CEO & Founder
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              md={6}
+              data-aos="fade-left"
+              sx={{ display: "flex", alignItems: "center" }}
+            >
+              <Box>
+                <Typography
+                  sx={{
+                    fontSize: "16px",
+                    fontFamily: '"Source Sans Pro", sans-serif',
+                    fontWeight: 700,
+                    borderBottom: "1px solid #ce1e24",
+                    width: "fit-content",
+                    marginBottom: "20px",
+                    textAlign: "center",
+                  }}
+                >
+                  Bio
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "16px",
+                    fontFamily: '"Source Sans Pro", sans-serif',
+                    fontWeight: 300,
+                    marginBottom: "10px",
+                  }}
+                >
+                  Meet the driving force behind J Rose Training & Consultancy,
+                  Jessica Rose Thompson. With over a decade immersed in the
+                  training industry, Jessica embodies a passion for empowering
+                  organisations to thrive. As the founder and managing director,
+                  she leads with expertise honed across diverse sectors
+                  including healthcare, education, environment, construction,
+                  catering, hospitality, security and many other industry
+                  sectors. At J Rose, we go beyond conventional consultancy;
+                  we're catalysts for growth, offering tailored support to both
+                  budding enterprises and established industry leaders. With
+                  Jessica at the helm, expect innovation, insight, and a
+                  commitment to excellence in every endeavor.
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
-        <Divider sx={{ width: "80%", margin: "auto" }} />
       </Box>
 
       <Services />
+
+      <LogoCarousel />
 
       <Box
         data-aos="fade-up"
         sx={{
           width: { xs: "100%", md: "80%" },
-          margin: "50px auto",
+          margin: "0 auto 50px",
         }}
       >
         <Book />

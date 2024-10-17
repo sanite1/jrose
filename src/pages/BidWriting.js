@@ -9,9 +9,10 @@ import { useTheme } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
-import ConsultancyCards from "../components/Consultancy/ConsultancyCards";
+// import ConsultancyCards from "../components/Consultancy/ConsultancyCards";
+import BidWritingServices from "../components/Consultancy/BidWriting";
 
-const Consultancy = () => {
+const BidWriting = () => {
   React.useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -20,7 +21,7 @@ const Consultancy = () => {
       Home
     </Link>,
     <Typography key="2" color="#ce1e24" sx={{ fontWeight: "600" }}>
-      Consultancy Services
+      Bid Writing
     </Typography>,
   ];
   useEffect(() => {
@@ -70,7 +71,7 @@ const Consultancy = () => {
                 fontWeight: "700",
               }}
             >
-              Consultancy Services
+              Bid Writing
             </Typography>
             <Typography
               sx={{
@@ -78,7 +79,7 @@ const Consultancy = () => {
                   xs: theme.typography.body2.fontSize,
                   md: theme.typography.body1.fontSize,
                 },
-                width: { xs: "90%", md: "90%" },
+                width: { xs: "90%", md: "70%" },
                 margin: "auto",
                 marginBottom: "20px",
                 fontFamily: '"Source Sans Pro", sans-serif',
@@ -86,8 +87,10 @@ const Consultancy = () => {
                 color: "#fff",
               }}
             >
-              Our consultancy services provide tailored strategies to help you
-              achieve sustainable growth and success.
+              {" "}
+              With a proven track record of delivering high-quality results and
+              a dedicated team of professionals, we are confident in our ability
+              to meet and exceed your expectations.
             </Typography>
             <Breadcrumbs
               separator={<NavigateNextIcon fontSize="small" />}
@@ -108,8 +111,8 @@ const Consultancy = () => {
           margin: "50px auto",
         }}
       >
-        {/* CARDS */}
-        <ConsultancyCards />
+        {/* Bidwriting Services  */}
+        <BidWritingServices />
       </Box>
 
       <Footer />
@@ -117,4 +120,4 @@ const Consultancy = () => {
   );
 };
 
-export default Consultancy;
+export default BidWriting;

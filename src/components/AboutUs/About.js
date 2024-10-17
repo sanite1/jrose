@@ -47,7 +47,7 @@ const About = () => {
                     width: { xs: "100%", md: "70%" },
                   }}
                 >
-                  This is what makes us who we are
+                  Who we are
                 </Typography>
                 <Typography
                   sx={{
@@ -57,14 +57,33 @@ const About = () => {
                     marginBottom: "20px",
                   }}
                 >
-                  At J Rose - Training & Consultancy, we believe that every
-                  individual and organization deserves access to transformative
-                  growth and expert guidance. Our team of dedicated and
-                  passionate consultants is committed to delivering innovative
-                  solutions, personalized services, and unwavering support to
-                  help you achieve your goals. With a drive for excellence and a
-                  passion for empowering success, we strive to make a lasting
-                  impact on your business and community.
+                  J Rose Training & Consultancy stands as a distinguished leader
+                  in providing enriched learning, training, and professional
+                  development services, adept at catering to a diverse range of
+                  industries and educational backgrounds. Our unwavering
+                  dedication to excellence is evident in our bespoke learning
+                  solutions and innovative teaching methods. Offering a
+                  comprehensive selection of courses spanning critical areas
+                  such as first aid, health and safety, staff management, and
+                  more, we equip individuals and organisations with the
+                  essential skills for success.
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "14px",
+                    fontFamily: '"Source Sans Pro", sans-serif',
+                    fontWeight: 400,
+                    marginBottom: "20px",
+                  }}
+                >
+                  Since our establishment, we have continuously evolved our
+                  offerings to meet the evolving demands of emerging industries.
+                  As we extend our services to governmental agencies, we are
+                  uniquely positioned to deliver tailored solutions that adhere
+                  to regulatory standards and bolster workforce capabilities.
+                  Whether through virtual sessions, in-person training, or a
+                  blend of both, we accommodate your preferences at a location
+                  of your choosing.
                 </Typography>
                 <Typography
                   sx={{
@@ -76,7 +95,14 @@ const About = () => {
                 >
                   Our Core Values:
                 </Typography>
-                <Box>
+                <Box
+                  sx={{
+                    width: "100%",
+                    display: "flex",
+                    alignItems: "start",
+                    justifyContent: "flex-start",
+                  }}
+                >
                   <Box
                     sx={{
                       width: "100%",
@@ -88,7 +114,7 @@ const About = () => {
                   >
                     <CheckCircleIcon
                       fontSize="small"
-                      sx={{ color: "#ce1e24", zIndex: 0 }}
+                      sx={{ color: "#ce1e24", zIndex: 0, marginLeft: "10px" }}
                     />
                     <Typography
                       sx={{
