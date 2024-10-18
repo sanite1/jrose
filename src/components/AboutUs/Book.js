@@ -62,7 +62,7 @@ function Book() {
           >
             Take the first step toward achieving your goals by booking a
             consultation with our expert team. Whether you're seeking tailored
-            advice, strategic insights, or personalized solutions, we're here to
+            advice, strategic insights, or personalised solutions, we're here to
             guide you. Our consultations are designed to address your unique
             challenges and help you unlock new opportunities.
           </Typography>

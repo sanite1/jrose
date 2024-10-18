@@ -71,7 +71,7 @@ function HomeIntro() {
               color: "#fff",
             }}
           >
-            Embark on a transformative journey with us today! We specialize in
+            Embark on a transformative journey with us today! We specialise in
             providing tailored training and consultancy solutions that empower
             individuals and organizations to achieve their goals. Your success
             is our mission.

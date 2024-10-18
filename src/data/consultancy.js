@@ -76,7 +76,7 @@ const Consultancy = [
       "Bid Searching Service: Fully managed bid research with up to 8 opportunities delivered monthly",
       "Bid Writing: Unlimited bid writing (for bids up to £50,000 or more)",
       "Bid Review: In-depth, iterative reviews and refinement",
-      "Strategic Fundraising Plan: Fully customized, long-term funding roadmap",
+      "Strategic Fundraising Plan: Fully customised, long-term funding roadmap",
       "Ongoing Support: Includes strategy sessions, funder liaison, and reporting assistance",
     ],
     cost: "Fixed price (e.g., £5,000+ for bespoke service)",

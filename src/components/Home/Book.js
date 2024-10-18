@@ -59,7 +59,7 @@ const Book = () => {
                 >
                   Take the first step toward achieving your goals by booking a
                   consultation with our expert team. Whether you're seeking
-                  tailored advice, strategic insights, or personalized
+                  tailored advice, strategic insights, or personalised
                   solutions, we're here to guide you. Our consultations are
                   designed to address your unique challenges and help you unlock
                   new opportunities.
@@ -97,7 +97,7 @@ const Book = () => {
                         zIndex: 0,
                       }}
                     >
-                      Personalized Guidance: Get expert advice tailored to your
+                      Personalised Guidance: Get expert advice tailored to your
                       specific needs and objectives.
                     </Typography>
                   </Box>

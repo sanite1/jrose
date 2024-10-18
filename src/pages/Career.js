@@ -141,7 +141,7 @@ const Career = () => {
             textAlign: "center",
           }}
         >
-          APPLY TO BECOME A TRAINNER
+          APPLY TO BECOME A TRAINER
         </Typography>
         <Box
           sx={{

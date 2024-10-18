@@ -3,7 +3,7 @@ export const faq = [
     id: 1,
     question: "What services does J Rose - Training & Consultancy offer?",
     answer:
-      "We provide customized training programs, strategic consulting, leadership development, and operational efficiency solutions to help businesses and individuals achieve sustainable growth.",
+      "We provide customised training programs, strategic consulting, leadership development, and operational efficiency solutions to help businesses and individuals achieve sustainable growth.",
   },
   {
     id: 2,

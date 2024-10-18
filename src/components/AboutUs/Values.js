@@ -95,7 +95,7 @@ const Values = () => {
                 textAlign: { xs: "justify", md: "center" },
               }}
             >
-              At J Rose, our mission is to provide personalized, effective
+              At J Rose, our mission is to provide personalised, effective
               training and consultancy services that empower individuals and
               organizations to reach their full potential. Our core values of
               integrity, excellence, and reliability guide everything we do. We

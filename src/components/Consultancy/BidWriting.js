@@ -162,11 +162,19 @@ const BidWriting = () => {
                   open={open}
                   onClose={handleClose}
                   sx={{
+                    marginTop: {
+                      xs: "10vh",
+                      // md: "0",
+                    },
                     "& .MuiDialog-paper": {
                       width: { xs: "100%", md: "60%" },
                       maxWidth: "none",
-                      margin: { xs: "0", md: "auto" },
-                      borderRadius: { xs: "0", md: "10px" },
+                      margin: "auto",
+                      borderRadius: { xs: "0", md: "8px" },
+                    },
+                    "& .MuiBackdrop-root": {
+                      backgroundColor: "rgba(0, 0, 0, 0.1)",
+                      boxShadow: "0",
                     },
                   }}
                 >
@@ -174,13 +182,9 @@ const BidWriting = () => {
                     <>
                       <DialogTitle
                         sx={{
-                          marginTop: {
-                            xs: "10vh",
-                            md: "0",
-                            fontSize: "24px",
-                            fontFamily: '"Source Sans Pro", sans-serif',
-                            fontWeight: "600",
-                          },
+                          fontSize: "24px",
+                          fontFamily: '"Source Sans Pro", sans-serif',
+                          fontWeight: "600",
                         }}
                       >
                         {selectedItem.name}

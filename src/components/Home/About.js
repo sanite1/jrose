@@ -94,7 +94,7 @@ const About = () => {
                   with expert guidance and innovative solutions. Our mission is
                   to elevate your potential by delivering consistent and
                   impactful results in every engagement. We believe in fostering
-                  growth through a personalized approach, ensuring that our
+                  growth through a personalised approach, ensuring that our
                   services are reliable, effective, and tailored to your unique
                   needs. Guided by these core values, we are committed to
                   helping you achieve excellence and success in every endeavor.

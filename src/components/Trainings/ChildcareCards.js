@@ -1,4 +1,4 @@
-import { Box, Grid, Link, Tooltip, Typography } from "@mui/material";
+import { Box, Divider, Grid, Link, Tooltip, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -63,247 +63,199 @@ const ChildcareCards = () => {
             textAlign: "center",
           }}
         ></Box>
-        <Typography
-          sx={{
-            fontSize: "16px",
-            fontFamily: '"Source Sans Pro", sans-serif',
-            fontWeight: 400,
-            width: { xs: "100%", md: "70%" },
-            margin: { xs: "0 auto 20px" },
-            textAlign: "center",
-          }}
-        >
-          Our Childcare Professional Training Package is designed for
-          individuals looking to become childminders, nannies, or home
-          childcarers. We provide all the essential courses and guidance needed
-          to meet the regulatory and practical requirements of the role,
-          ensuring you’re fully prepared to care for children safely and
-          professionally.
-        </Typography>
       </Box>
-      <Grid container sx={{ width: "100%", margin: "auto" }}>
-        {Trainings.filter((training) => {
-          return training.trainingType === "childcare";
-        }).map((item, pos) => {
-          return (
+      <Grid container spacing={3}>
+        {Trainings.filter(
+          (training) => training.trainingType === "childcare"
+        ).map((item, pos) => (
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={6} md={6} key={pos}>
+              <Box sx={{ width: "90%", margin: "auto", borderRadius: "20px" }}>
+                <Box>
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    style={{ width: "100%", borderRadius: "10px" }}
+                  />
+                </Box>
+              </Box>
+            </Grid>
             <Grid
-              data-aos="fade-right"
               item
               xs={12}
               sm={6}
-              md={3}
-              sx={{
-                width: { xs: "100%", marginBottom: "20px" },
-              }}
+              md={6}
+              key={pos}
+              sx={{ display: "flex", alignItems: "center" }}
             >
-              <Box
-                sx={{
-                  width: { xs: "100%", md: "90%" },
-                  margin: "auto",
-                  borderRadius: "20px",
-                  boxSizing: "border-box",
-                }}
-              >
-                <Box
+              <Box sx={{ width: { xs: "90%", md: "100%" }, margin: "auto" }}>
+                <Typography
                   sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    flexWrap: "wrap",
-                    height: "100%",
+                    fontSize: "16px",
+                    fontFamily: '"Source Sans Pro", sans-serif',
+                    fontWeight: 400,
+                    borderBottom: "1px solid #ce1e24",
+                    width: "fit-content",
+                    // margin: "auto",
+                    marginBottom: "20px",
                   }}
                 >
-                  <img
-                    src={item.image}
-                    alt={"experience"}
-                    style={{
-                      width: "100%",
-                      borderRadius: "10px",
-                    }}
-                  />
-                </Box>
-                <Tooltip title={item.name}>
-                  <Typography
-                    sx={{
-                      fontSize: "20px",
-                      fontFamily: '"Source Sans Pro", sans-serif',
-                      fontWeight: 600,
-                      margin: "10px 0",
-                      whiteSpace: "nowrap",
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
-                      maxWidth: "100%",
-                    }}
-                  >
-                    {item.name}
-                  </Typography>
-                </Tooltip>
+                  EXPLORE
+                </Typography>
                 <Typography
                   sx={{
                     fontSize: "14px",
                     fontFamily: '"Source Sans Pro", sans-serif',
-                    margin: "10px 0",
+                    fontWeight: 400,
+                    marginBottom: "10px",
+                  }}
+                >
+                  Our Childcare Professional Training Package is designed for
+                  individuals looking to become childminders, nannies, or home
+                  childcarers. We provide all the essential courses and guidance
+                  needed to meet the regulatory and practical requirements of
+                  the role, ensuring you’re fully prepared to care for children
+                  safely and professionally.
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "14px",
+                    fontFamily: '"Source Sans Pro", sans-serif',
+                    marginBottom: "10px",
                     display: "-webkit-box",
                     WebkitBoxOrient: "vertical",
                     WebkitLineClamp: 3,
                     overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    maxWidth: "300px",
                   }}
                 >
                   {item.desc}
                 </Typography>
                 <Button
-                  variant="outlined"
+                  variant="contained"
                   sx={{
                     fontSize: "14px",
-                    color: "#ce1e24",
+                    background: "#ce1e24",
+                    color: "#fff",
                     fontFamily: '"Source Sans Pro", sans-serif',
                     fontWeight: 600,
                     borderColor: "#ce1e24",
-                    padding: 0,
-                    border: 0,
                     textAlign: "left",
                     width: "fit-content",
                     "&:hover": {
-                      background: "none",
+                      background: "#ce1e24",
                       border: "0",
                       cursor: "pointer",
                     },
                   }}
                   onClick={() => handleClickOpen(item)}
                 >
-                  Read More
+                  View Courses
                 </Button>
-                <Dialog
-                  fullScreen={fullScreen}
-                  open={open}
-                  onClose={handleClose}
-                  sx={{
-                    "& .MuiDialog-paper": {
-                      width: { xs: "100%", md: "60%" },
-                      maxWidth: "none",
-                      margin: { xs: "0", md: "auto" },
-                      borderRadius: { xs: "0", md: "10px" },
-                    },
-                  }}
-                >
-                  {selectedItem && (
-                    <>
-                      <DialogTitle
-                        sx={{
-                          marginTop: {
-                            xs: "10vh",
-                            md: "0",
-                            fontSize: "24px",
-                            fontFamily: '"Source Sans Pro", sans-serif',
-                            fontWeight: "600",
-                          },
-                        }}
-                      >
-                        {selectedItem.name}
-                      </DialogTitle>
-                      <DialogContent>
-                        <Grid container spacing={2} alignItems="center">
-                          <Grid item xs={12} md={5}>
-                            <Box
-                              component="img"
-                              src={selectedItem.image}
-                              alt={selectedItem.name}
-                              sx={{
-                                width: "100%",
-                                borderRadius: "10px",
-                                objectFit: "cover",
-                              }}
-                            />
-                          </Grid>
-                          <Grid item xs={12} md={7}>
-                            <Typography
-                              sx={{
-                                fontSize: "16px",
-                                fontFamily: '"Source Sans Pro", sans-serif',
-                                marginBottom: "10px",
-                              }}
-                            >
-                              <strong>Description:</strong> {selectedItem.desc}
-                            </Typography>
-                            {selectedItem.duration ? (
-                              <Typography
-                                sx={{
-                                  fontSize: "16px",
-                                  fontFamily: '"Source Sans Pro", sans-serif',
-                                  marginBottom: "10px",
-                                }}
-                              >
-                                <strong>Duration:</strong>{" "}
-                                {selectedItem.duration}
-                              </Typography>
-                            ) : (
-                              ""
-                            )}
-                            {selectedItem.mode ? (
-                              <Typography
-                                sx={{
-                                  fontSize: "16px",
-                                  fontFamily: '"Source Sans Pro", sans-serif',
-                                  marginBottom: "10px",
-                                }}
-                              >
-                                <strong>Mode:</strong> {selectedItem.mode}
-                              </Typography>
-                            ) : (
-                              ""
-                            )}
-                            {selectedItem.certification ? (
-                              <Typography
-                                sx={{
-                                  fontSize: "16px",
-                                  fontFamily: '"Source Sans Pro", sans-serif',
-                                  marginBottom: "10px",
-                                }}
-                              >
-                                <strong>Certification:</strong>{" "}
-                                {selectedItem.certification}
-                              </Typography>
-                            ) : (
-                              ""
-                            )}
-                            <Typography
-                              sx={{
-                                fontSize: "16px",
-                                fontFamily: '"Source Sans Pro", sans-serif',
-                                marginBottom: "10px",
-                              }}
-                            >
-                              <strong>Price:</strong> {selectedItem.price}
-                            </Typography>
-                          </Grid>
-                        </Grid>
-                      </DialogContent>
-                      <DialogActions>
-                        <Button
-                          sx={{
-                            background: "#ce1e24",
-                            color: "#fff",
-
-                            "&:hover": {
-                              background: "#a51a1f",
-                              transform: "scale(1.05)",
-                            },
-                          }}
-                          autoFocus
-                          onClick={handleClose}
-                        >
-                          Done
-                        </Button>
-                      </DialogActions>
-                    </>
-                  )}
-                </Dialog>
               </Box>
             </Grid>
-          );
-        })}
+          </Grid>
+        ))}
       </Grid>
+
+      <Dialog
+        fullScreen={fullScreen}
+        open={open}
+        onClose={handleClose}
+        sx={{
+          marginTop: {
+            xs: "10vh",
+            // md: "0",
+          },
+          "& .MuiDialog-paper": {
+            width: { xs: "100%", md: "40%" },
+            maxWidth: "none",
+            margin: "auto",
+            borderRadius: { xs: "0", md: "8px" },
+          },
+        }}
+      >
+        {selectedItem && (
+          <>
+            <DialogTitle
+              sx={{
+                fontSize: "24px",
+                fontFamily: '"Source Sans Pro", sans-serif',
+                fontWeight: 600,
+              }}
+            >
+              {selectedItem.name}
+            </DialogTitle>
+            <DialogContent>
+              <Typography
+                sx={{
+                  fontSize: "16px",
+                  fontFamily: '"Source Sans Pro", sans-serif',
+                  marginBottom: "10px",
+                }}
+              >
+                {selectedItem.desc}
+              </Typography>
+              {selectedItem.courses.map((course, index) => (
+                <Box key={index} sx={{ marginBottom: "20px" }}>
+                  <Typography
+                    sx={{
+                      fontSize: "20px",
+                      fontFamily: '"Source Sans Pro", sans-serif',
+                      fontWeight: 600,
+                      marginBottom: "5px",
+                      color: "#ce1e24",
+                    }}
+                  >
+                    {course.name}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: "16px",
+                      fontFamily: '"Source Sans Pro", sans-serif',
+                      marginBottom: "10px",
+                    }}
+                  >
+                    <strong>Description:</strong> {course.desc}
+                  </Typography>
+                  {course.duration && (
+                    <Typography sx={{ fontSize: "16px", marginBottom: "5px" }}>
+                      <strong>Duration:</strong> {course.duration}
+                    </Typography>
+                  )}
+                  {course.mode && (
+                    <Typography sx={{ fontSize: "16px", marginBottom: "5px" }}>
+                      <strong>Mode:</strong> {course.mode}
+                    </Typography>
+                  )}
+                  {course.certification && (
+                    <Typography sx={{ fontSize: "16px", marginBottom: "5px" }}>
+                      <strong>Certification:</strong> {course.certification}
+                    </Typography>
+                  )}
+                  <Typography sx={{ fontSize: "16px", marginBottom: "10px" }}>
+                    <strong>Price:</strong> {course.price}
+                  </Typography>
+                  <Divider />
+                </Box>
+              ))}
+            </DialogContent>
+            <DialogActions>
+              <Button
+                sx={{
+                  background: "#ce1e24",
+                  color: "#fff",
+                  "&:hover": {
+                    background: "#a51a1f",
+                  },
+                }}
+                onClick={handleClose}
+              >
+                Done
+              </Button>
+            </DialogActions>
+          </>
+        )}
+      </Dialog>
       <Box>
         <Typography
           sx={{

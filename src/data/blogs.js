@@ -11,7 +11,7 @@ const Blogs = [
     link: "/blogs/upskilling-workforce-value-continuous-training",
     date: "15th October, 2024",
     desc: [
-      "In today’s competitive business environment, continuous training is no longer a luxury; it’s a necessity. Organizations that prioritize employee development stay ahead of the curve, ensuring their workforce remains agile and adaptable to industry changes.",
+      "In today’s competitive business environment, continuous training is no longer a luxury; it’s a necessity. Organizations that prioritise employee development stay ahead of the curve, ensuring their workforce remains agile and adaptable to industry changes.",
       "### Why Continuous Training Matters:",
       "- **Improved Productivity**: Employees with the right skills can perform tasks more efficiently, leading to increased productivity.",
       "- **Higher Employee Retention**: Providing training opportunities helps employees feel valued and engaged, reducing turnover.",
@@ -30,10 +30,10 @@ const Blogs = [
       "Business consulting plays a critical role in helping companies navigate complex challenges and achieve their goals. Consultants provide expert insights, identify bottlenecks, and create actionable strategies for growth.",
       "### Key Benefits of Business Consulting:",
       "- **Objective Perspective**: Consultants provide unbiased assessments of business operations and strategies.",
-      "- **Specialized Expertise**: Consultants bring deep industry knowledge that companies may not have in-house.",
+      "- **Specialised Expertise**: Consultants bring deep industry knowledge that companies may not have in-house.",
       "- **Implementation Support**: Beyond strategy, consultants assist in implementing changes and monitoring results.",
       "A successful consulting engagement focuses not only on solving immediate challenges but also on empowering businesses to sustain improvements over time. The most effective consultants work collaboratively with organizations, ensuring knowledge transfer and building internal capabilities.",
-      "For businesses seeking long-term growth, consulting offers a way to unlock hidden potential, optimize processes, and drive strategic change.",
+      "For businesses seeking long-term growth, consulting offers a way to unlock hidden potential, optimise processes, and drive strategic change.",
     ],
   },
   {
@@ -49,7 +49,7 @@ const Blogs = [
       "- **Decision-Making Skills**: Learning frameworks for making sound, data-driven decisions.",
       "- **Change Management**: Training leaders to manage transitions and foster a culture of adaptability.",
       "Executive training programs typically combine classroom instruction, case studies, and experiential learning activities. These programs not only enhance technical skills but also focus on personal development, ensuring leaders are well-rounded and prepared for future challenges.",
-      "Investing in leadership development yields significant returns, including higher employee engagement, better team performance, and increased innovation. Organizations that prioritize executive training cultivate leaders who inspire, motivate, and drive sustainable growth.",
+      "Investing in leadership development yields significant returns, including higher employee engagement, better team performance, and increased innovation. Organizations that prioritise executive training cultivate leaders who inspire, motivate, and drive sustainable growth.",
     ],
   },
   {

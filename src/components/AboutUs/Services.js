@@ -122,7 +122,7 @@ const Services = () => {
               variant="h5"
               sx={{ fontWeight: 700, marginBottom: "15px" }}
             >
-              Specialized Sectors Covered
+              Specialised Sectors Covered
             </Typography>
             {[
               "Healthcare",
