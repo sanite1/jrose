@@ -202,7 +202,7 @@ const ContactUs = () => {
                       questions, and inquiries are important to us. Whether
                       you’re looking for more information about our services or
                       ready to explore how we can support your personal or
-                      organizational growth, we’re here to help. Reach out
+                      organisational growth, we’re here to help. Reach out
                       today, and let’s start a conversation about your future
                       success!
                     </Typography>

@@ -73,7 +73,7 @@ function HomeIntro() {
           >
             Embark on a transformative journey with us today! We specialise in
             providing tailored training and consultancy solutions that empower
-            individuals and organizations to achieve their goals. Your success
+            individuals and organisations to achieve their goals. Your success
             is our mission.
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "center" }}>

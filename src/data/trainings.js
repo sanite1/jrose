@@ -141,7 +141,7 @@ const Trainings = [
       {
         name: "Childcare Training Packages",
         link: "/trainings/childcare-training-packages",
-        desc: "Tailored for individuals and organizations working with children, these packages offer various training options including First Aid, Safeguarding, and EYFS.",
+        desc: "Tailored for individuals and organisations working with children, these packages offer various training options including First Aid, Safeguarding, and EYFS.",
         price: "Contact for details",
       },
       {

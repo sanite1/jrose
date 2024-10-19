@@ -97,7 +97,7 @@ const Values = () => {
             >
               At J Rose, our mission is to provide personalised, effective
               training and consultancy services that empower individuals and
-              organizations to reach their full potential. Our core values of
+              organisations to reach their full potential. Our core values of
               integrity, excellence, and reliability guide everything we do. We
               believe in fostering growth, inspiring confidence, and delivering
               lasting impact.
@@ -144,7 +144,7 @@ const Values = () => {
               }}
             >
               At J Rose - Training & Consultancy, our vision is to be a leading
-              catalyst for personal and organizational growth, empowering
+              catalyst for personal and organisational growth, empowering
               individuals and businesses to unlock their full potential. We aim
               to set new standards of excellence in training and consultancy,
               fostering innovation, leadership, and success for all those we
