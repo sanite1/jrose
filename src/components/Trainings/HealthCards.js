@@ -67,8 +67,8 @@ const HealthCards = () => {
       <Grid container spacing={3}>
         {Trainings.filter((training) => training.trainingType === "health").map(
           (item, pos) => (
-            <Grid item xs={12} sm={6} md={4} key={pos}>
-              <Box sx={{ width: "90%", margin: "auto", borderRadius: "20px" }}>
+            <Grid item xs={12} sm={6} md={3} key={pos}>
+              <Box sx={{ width: "100%", margin: "auto", borderRadius: "20px" }}>
                 <Box>
                   <img
                     src={item.image}
@@ -193,21 +193,143 @@ const HealthCards = () => {
                     <strong>Description:</strong> {course.desc}
                   </Typography>
                   {course.duration && (
-                    <Typography sx={{ fontSize: "16px", marginBottom: "5px" }}>
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        marginBottom: "5px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                      }}
+                    >
                       <strong>Duration:</strong> {course.duration}
                     </Typography>
                   )}
+                  {course.duration && (
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        marginBottom: "5px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                      }}
+                    >
+                      <strong>Duration:</strong> {course.duration}
+                    </Typography>
+                  )}
+
+                  {course.requirements && (
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        marginBottom: "5px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                      }}
+                    >
+                      <strong>Requirements:</strong> {course.requirements}
+                    </Typography>
+                  )}
+
+                  {course.recognition && (
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        marginBottom: "5px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                      }}
+                    >
+                      <strong>Recognition:</strong> {course.recognition}
+                    </Typography>
+                  )}
+
+                  {course.pathways && course.pathways.length > 0 && (
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        marginBottom: "5px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                      }}
+                    >
+                      <strong>Pathways:</strong>
+                      <ul style={{ margin: 0, paddingLeft: "20px" }}>
+                        {course.pathways.map((pathway, index) => (
+                          <li
+                            key={index}
+                            style={{
+                              marginBottom: "5px",
+                              fontFamily: '"Source Sans Pro", sans-serif',
+                            }}
+                          >
+                            {pathway}
+                          </li>
+                        ))}
+                      </ul>
+                    </Typography>
+                  )}
+
+                  {course.levels && course.levels.length > 0 && (
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        marginBottom: "5px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                      }}
+                    >
+                      <strong>Levels:</strong> {course.levels.join(", ")}
+                    </Typography>
+                  )}
+
+                  {course.benefits && course.benefits.length > 0 && (
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        marginBottom: "5px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                      }}
+                    >
+                      <strong>Benefits:</strong>
+                      <ul style={{ margin: 0, paddingLeft: "20px" }}>
+                        {course.benefits.map((benefit, index) => (
+                          <li
+                            key={index}
+                            style={{
+                              marginBottom: "5px",
+                              fontFamily: '"Source Sans Pro", sans-serif',
+                            }}
+                          >
+                            {benefit}
+                          </li>
+                        ))}
+                      </ul>
+                    </Typography>
+                  )}
+
                   {course.mode && (
-                    <Typography sx={{ fontSize: "16px", marginBottom: "5px" }}>
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        marginBottom: "5px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                      }}
+                    >
                       <strong>Mode:</strong> {course.mode}
                     </Typography>
                   )}
                   {course.certification && (
-                    <Typography sx={{ fontSize: "16px", marginBottom: "5px" }}>
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        marginBottom: "5px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                      }}
+                    >
                       <strong>Certification:</strong> {course.certification}
                     </Typography>
                   )}
-                  <Typography sx={{ fontSize: "16px", marginBottom: "10px" }}>
+                  <Typography
+                    sx={{
+                      fontSize: "16px",
+                      marginBottom: "10px",
+                      fontFamily: '"Source Sans Pro", sans-serif',
+                    }}
+                  >
                     <strong>Price:</strong> {course.price}
                   </Typography>
                   <Divider />

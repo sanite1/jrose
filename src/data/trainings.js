@@ -153,6 +153,57 @@ const Trainings = [
     ],
   },
   {
+    id: 4,
+    name: "Health & Social Care Qualifications",
+    image: jHealth11, // Replace with relevant image
+    desc: "These qualifications equip learners with skills to work in health and social care settings. Learners can choose pathways such as working with people with dementia, disabilities, or children.",
+    trainingType: "health",
+    courses: [
+      {
+        name: "Level 2 Diploma in Health and Social Care",
+        link: "/trainings/level-2-diploma-in-health-and-social-care",
+        desc: "A foundational qualification designed for individuals starting a career in health and social care, or those already working in the field looking to certify their skills.",
+        requirements:
+          "No prior experience needed. Suitable for those new to care roles.",
+        recognition:
+          "Meets Quality Care Commission (QCC) and Care Councils' requirements.",
+        price: "Contact for details",
+        pathways: [
+          "Working with children and young people",
+          "Working with people with a learning disability",
+          "Supporting individuals with dementia",
+        ],
+      },
+      {
+        name: "Level 3 Diploma in Health and Social Care",
+        link: "/trainings/level-3-diploma-in-health-and-social-care",
+        desc: "An advanced qualification required for senior care roles, designed for individuals already employed in a care setting.",
+        requirements: "Must be employed in a care role.",
+        recognition:
+          "Meets requirements for senior care workers by QCC and Care Councils.",
+        price: "Contact for details",
+        pathways: [
+          "Specializing in learning disabilities",
+          "Supporting adults with dementia",
+          "Caring for children in residential settings",
+        ],
+      },
+      {
+        name: "Functional Skills - Maths, English, and Digital Skills",
+        link: "/trainings/functional-skills-maths-english-digital",
+        desc: "Designed for learners at college, adult programs, or apprenticeships. These qualifications provide essential skills needed for employment, further studies, and navigating real-life situations.",
+        levels: ["Level 1", "Level 2", "Level 3"],
+        price: "Contact for details",
+        benefits: [
+          "Supports future employment opportunities",
+          "Builds confidence for further education",
+          "Enhances practical, day-to-day skills",
+        ],
+      },
+    ],
+  },
+
+  {
     id: 14,
     image: jCatering1,
     name: "Food Safety and Hygiene for Catering",
