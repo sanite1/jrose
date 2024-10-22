@@ -152,6 +152,7 @@ const Trainings = [
       },
     ],
   },
+
   {
     id: 4,
     name: "Health & Social Care Qualifications",
@@ -202,66 +203,74 @@ const Trainings = [
       },
     ],
   },
-
   {
-    id: 14,
-    image: jCatering1,
-    name: "Food Safety and Hygiene for Catering",
-    link: "food-safety-and-hygiene-for-catering",
-    desc: "Essential for catering staff, this course covers food hygiene regulations and best practices to ensure safe food handling and preparation in any kitchen environment.",
-    duration: "Half day (3 hours)",
-    price: "£50.00",
-    content:
-      "Food hygiene laws, cross-contamination prevention, food storage, allergen management, cleaning procedures.",
+    id: 5,
+    name: "Catering Training Programs",
+    image: jCatering1, // Image of the first element in this group
+    desc: "Our training packages for the catering industry are tailored to meet the specific needs of catering businesses, ensuring staff are trained to the highest standards of safety, hygiene, and compliance.    ",
     trainingType: "catering",
-  },
-  {
-    id: 15,
-    image: jCatering2,
-    name: "Allergen Awareness",
-    link: "allergen-awareness",
-    desc: "Designed to help catering staff manage and reduce the risks of food allergens in the kitchen, ensuring safer food preparation.",
-    duration: "2 hours",
-    price: "£40.00",
-    content:
-      "Understanding food allergens, how to avoid cross-contamination, and communicating allergen risks to customers.",
-    trainingType: "catering",
-  },
-  {
-    id: 16,
-    image: jCatering3,
-    name: "Fire Safety in Catering",
-    link: "fire-safety-in-catering",
-    desc: "This course provides essential fire safety training for catering staff, focusing on kitchen-specific hazards and fire prevention methods.",
-    duration: "Half day (3 hours)",
-    price: "£45.00",
-    content:
-      "Fire risk assessments, using fire extinguishers, evacuation procedures, and prevention of kitchen fires.",
-    trainingType: "catering",
-  },
-  {
-    id: 17,
-    image: jCatering4,
-    name: "Manual Handling in Catering",
-    link: "manual-handling-in-catering",
-    desc: "Ideal for catering staff who need to safely lift and carry heavy items or equipment, reducing the risk of injury in the workplace.",
-    duration: "Half day (3 hours)",
-    price: "£40.00",
-    content:
-      "Safe lifting techniques, avoiding injury, and proper use of lifting equipment.",
-    trainingType: "catering",
-  },
-  {
-    id: 18,
-    image: jCatering5,
-    name: "Basic Life Support (BLS) for Restaurants",
-    link: "basic-life-support-bls-for-restaurants",
-    desc: "This course equips restaurant staff with essential life-saving skills, enabling them to respond effectively to emergencies such as choking or cardiac arrest.",
-    duration: "Half day (3 hours)",
-    price: "£55.00",
-    content:
-      "CPR for adults, choking management, use of an AED, and handling unconscious casualties.",
-    trainingType: "catering",
+    courses: [
+      {
+        id: 14,
+        image: jCatering1,
+        name: "Food Safety and Hygiene for Catering",
+        link: "food-safety-and-hygiene-for-catering",
+        desc: "Essential for catering staff, this course covers food hygiene regulations and best practices to ensure safe food handling and preparation in any kitchen environment.",
+        duration: "Half day (3 hours)",
+        price: "£50.00",
+        content:
+          "Food hygiene laws, cross-contamination prevention, food storage, allergen management, cleaning procedures.",
+        trainingType: "catering",
+      },
+      {
+        id: 15,
+        image: jCatering2,
+        name: "Allergen Awareness",
+        link: "allergen-awareness",
+        desc: "Designed to help catering staff manage and reduce the risks of food allergens in the kitchen, ensuring safer food preparation.",
+        duration: "2 hours",
+        price: "£40.00",
+        content:
+          "Understanding food allergens, how to avoid cross-contamination, and communicating allergen risks to customers.",
+        trainingType: "catering",
+      },
+      {
+        id: 16,
+        image: jCatering3,
+        name: "Fire Safety in Catering",
+        link: "fire-safety-in-catering",
+        desc: "This course provides essential fire safety training for catering staff, focusing on kitchen-specific hazards and fire prevention methods.",
+        duration: "Half day (3 hours)",
+        price: "£45.00",
+        content:
+          "Fire risk assessments, using fire extinguishers, evacuation procedures, and prevention of kitchen fires.",
+        trainingType: "catering",
+      },
+      {
+        id: 17,
+        image: jCatering4,
+        name: "Manual Handling in Catering",
+        link: "manual-handling-in-catering",
+        desc: "Ideal for catering staff who need to safely lift and carry heavy items or equipment, reducing the risk of injury in the workplace.",
+        duration: "Half day (3 hours)",
+        price: "£40.00",
+        content:
+          "Safe lifting techniques, avoiding injury, and proper use of lifting equipment.",
+        trainingType: "catering",
+      },
+      {
+        id: 18,
+        image: jCatering5,
+        name: "Basic Life Support (BLS) for Restaurants",
+        link: "basic-life-support-bls-for-restaurants",
+        desc: "This course equips restaurant staff with essential life-saving skills, enabling them to respond effectively to emergencies such as choking or cardiac arrest.",
+        duration: "Half day (3 hours)",
+        price: "£55.00",
+        content:
+          "CPR for adults, choking management, use of an AED, and handling unconscious casualties.",
+        trainingType: "catering",
+      },
+    ],
   },
   {
     id: 19,

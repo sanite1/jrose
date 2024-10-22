@@ -59,17 +59,17 @@ const ChildcareCards = () => {
             background: "#ce1e24",
             width: "30%",
             height: "5px",
-            margin: { xs: "0 auto 20px" },
+            margin: { xs: "0 auto 50px" },
             textAlign: "center",
           }}
         ></Box>
       </Box>
-      <Grid container spacing={3}>
+      <Grid container sx={{ width: "100%", margin: "auto" }}>
         {Trainings.filter(
           (training) => training.trainingType === "childcare"
         ).map((item, pos) => (
           <Grid container spacing={3}>
-            <Grid item xs={12} sm={6} md={6} key={pos}>
+            <Grid item xs={12} sm={6} md={6} key={pos} data-aos="fade-right">
               <Box sx={{ width: "90%", margin: "auto", borderRadius: "20px" }}>
                 <Box>
                   <img
@@ -81,6 +81,7 @@ const ChildcareCards = () => {
               </Box>
             </Grid>
             <Grid
+              data-aos="fade-left"
               item
               xs={12}
               sm={6}

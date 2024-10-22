@@ -1,4 +1,4 @@
-import { Box, Grid, Tooltip, Typography } from "@mui/material";
+import { Box, Divider, Grid, Tooltip, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -58,251 +58,230 @@ const CateringCards = () => {
             background: "#ce1e24",
             width: "30%",
             height: "5px",
-            margin: { xs: "0 auto 20px" },
+            margin: { xs: "0 auto 50px" },
             textAlign: "center",
           }}
         ></Box>
-        <Typography
-          sx={{
-            fontSize: "16px",
-            fontFamily: '"Source Sans Pro", sans-serif',
-            fontWeight: 400,
-            width: { xs: "100%", md: "70%" },
-            margin: { xs: "0 auto 20px" },
-            textAlign: "center",
-          }}
-        >
-          Our training packages for the catering industry are tailored to meet
-          the specific needs of catering businesses, ensuring staff are trained
-          to the highest standards of safety, hygiene, and compliance.
-        </Typography>
       </Box>
       <Grid container sx={{ width: "100%", margin: "auto" }}>
         {Trainings.filter((training) => {
           return training.trainingType === "catering";
         }).map((item, pos) => {
           return (
-            <Grid
-              data-aos="fade-right"
-              item
-              xs={12}
-              sm={6}
-              md={3}
-              sx={{
-                width: { xs: "100%", marginBottom: "20px" },
-              }}
-            >
-              <Box
+            <Box>
+              <Grid container spacing={3}>
+                <Grid
+                  item
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  key={pos}
+                  data-aos="fade-right"
+                >
+                  <Box
+                    sx={{ width: "90%", margin: "auto", borderRadius: "20px" }}
+                  >
+                    <Box>
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        style={{ width: "100%", borderRadius: "10px" }}
+                      />
+                    </Box>
+                  </Box>
+                </Grid>
+                <Grid
+                  data-aos="fade-left"
+                  item
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  key={pos}
+                  sx={{ display: "flex", alignItems: "center" }}
+                >
+                  <Box
+                    sx={{ width: { xs: "90%", md: "100%" }, margin: "auto" }}
+                  >
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                        fontWeight: 400,
+                        borderBottom: "1px solid #ce1e24",
+                        width: "fit-content",
+                        // margin: "auto",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      EXPLORE
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontSize: "14px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                        fontWeight: 400,
+                        marginBottom: "10px",
+                      }}
+                    >
+                      This comprehensive training package equips catering staff
+                      with a wide range of essential skills to maintain safety
+                      and compliance in the workplace. It covers food hygiene
+                      regulations and best practices to ensure proper food
+                      handling, allergen management to minimize risks during
+                      food preparation, and fire safety techniques focused on
+                      kitchen-specific hazards. Additionally, staff will learn
+                      safe lifting methods to prevent workplace injuries and
+                      develop critical life-saving skills, enabling them to
+                      respond confidently to emergencies such as choking or
+                      cardiac arrest. This well-rounded training ensures a
+                      safer, more efficient kitchen environment.
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontSize: "14px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                        marginBottom: "10px",
+                        display: "-webkit-box",
+                        WebkitBoxOrient: "vertical",
+                        WebkitLineClamp: 3,
+                        overflow: "hidden",
+                      }}
+                    >
+                      {item.desc}
+                    </Typography>
+                    <Button
+                      variant="contained"
+                      sx={{
+                        fontSize: "14px",
+                        background: "#ce1e24",
+                        color: "#fff",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                        fontWeight: 600,
+                        borderColor: "#ce1e24",
+                        textAlign: "left",
+                        width: "fit-content",
+                        "&:hover": {
+                          background: "#ce1e24",
+                          border: "0",
+                          cursor: "pointer",
+                        },
+                      }}
+                      onClick={() => handleClickOpen(item)}
+                    >
+                      View Courses
+                    </Button>
+                  </Box>
+                </Grid>
+              </Grid>
+              <Dialog
+                fullScreen={fullScreen}
+                open={open}
+                onClose={handleClose}
                 sx={{
-                  width: { xs: "100%", md: "90%" },
-                  margin: "auto",
-                  borderRadius: "20px",
-                  boxSizing: "border-box",
+                  marginTop: {
+                    xs: "10vh",
+                    // md: "0",
+                  },
+                  "& .MuiDialog-paper": {
+                    width: { xs: "100%", md: "40%" },
+                    maxWidth: "none",
+                    margin: "auto",
+                    borderRadius: { xs: "0", md: "8px" },
+                  },
                 }}
               >
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    flexWrap: "wrap",
-                    height: "100%",
-                  }}
-                >
-                  <img
-                    src={item.image}
-                    alt={"experience"}
-                    style={{
-                      width: "100%",
-                      borderRadius: "10px",
-                    }}
-                  />
-                </Box>
-                <Tooltip title={item.name}>
-                  <Typography
-                    sx={{
-                      fontSize: "20px",
-                      fontFamily: '"Source Sans Pro", sans-serif',
-                      fontWeight: 600,
-                      margin: "10px 0",
-                      whiteSpace: "nowrap",
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
-                      maxWidth: "100%",
-                    }}
-                  >
-                    {item.name}
-                  </Typography>
-                </Tooltip>
-                <Typography
-                  sx={{
-                    fontSize: "14px",
-                    fontFamily: '"Source Sans Pro", sans-serif',
-                    margin: "10px 0",
-                    display: "-webkit-box",
-                    WebkitBoxOrient: "vertical",
-                    WebkitLineClamp: 3,
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    maxWidth: "300px",
-                  }}
-                >
-                  {item.desc}
-                </Typography>
-                <Button
-                  variant="outlined"
-                  sx={{
-                    fontSize: "14px",
-                    color: "#ce1e24",
-                    fontFamily: '"Source Sans Pro", sans-serif',
-                    fontWeight: 600,
-                    borderColor: "#ce1e24",
-                    padding: 0,
-                    border: 0,
-                    textAlign: "left",
-                    width: "fit-content",
-                    "&:hover": {
-                      background: "none",
-                      border: "0",
-                      cursor: "pointer",
-                    },
-                  }}
-                  onClick={() => handleClickOpen(item)}
-                >
-                  Read More
-                </Button>
-
-                <Dialog
-                  fullScreen={fullScreen}
-                  open={open}
-                  onClose={handleClose}
-                  a
-                  sx={{
-                    marginTop: {
-                      xs: "10vh",
-                      // md: "0",
-                    },
-                    "& .MuiDialog-paper": {
-                      width: { xs: "100%", md: "60%" },
-                      maxWidth: "none",
-                      margin: "auto",
-                      borderRadius: { xs: "0", md: "8px" },
-                    },
-                    "& .MuiBackdrop-root": {
-                      backgroundColor: "rgba(0, 0, 0, 0.1)",
-                      boxShadow: "0",
-                    },
-                  }}
-                >
-                  {selectedItem && (
-                    <>
-                      <DialogTitle
+                {selectedItem && (
+                  <>
+                    <DialogTitle
+                      sx={{
+                        fontSize: "24px",
+                        fontFamily: '"Source Sans Pro", sans-serif',
+                        fontWeight: 600,
+                      }}
+                    >
+                      {selectedItem.name}
+                    </DialogTitle>
+                    <DialogContent>
+                      <Typography
                         sx={{
-                          fontSize: "24px",
+                          fontSize: "16px",
                           fontFamily: '"Source Sans Pro", sans-serif',
-                          fontWeight: "600",
+                          marginBottom: "10px",
                         }}
                       >
-                        {selectedItem.name}
-                      </DialogTitle>
-                      <DialogContent>
-                        <Grid container spacing={2} alignItems="center">
-                          <Grid item xs={12} md={5}>
-                            <Box
-                              component="img"
-                              src={selectedItem.image}
-                              alt={selectedItem.name}
-                              sx={{
-                                width: "100%",
-                                borderRadius: "10px",
-                                objectFit: "cover",
-                              }}
-                            />
-                          </Grid>
-                          <Grid item xs={12} md={7}>
+                        {selectedItem.desc}
+                      </Typography>
+                      {selectedItem.courses.map((course, index) => (
+                        <Box key={index} sx={{ marginBottom: "20px" }}>
+                          <Typography
+                            sx={{
+                              fontSize: "20px",
+                              fontFamily: '"Source Sans Pro", sans-serif',
+                              fontWeight: 600,
+                              marginBottom: "5px",
+                              color: "#ce1e24",
+                            }}
+                          >
+                            {course.name}
+                          </Typography>
+                          <Typography
+                            sx={{
+                              fontSize: "16px",
+                              fontFamily: '"Source Sans Pro", sans-serif',
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <strong>Description:</strong> {course.desc}
+                          </Typography>
+                          {course.duration && (
                             <Typography
-                              sx={{
-                                fontSize: "16px",
-                                fontFamily: '"Source Sans Pro", sans-serif',
-                                marginBottom: "10px",
-                              }}
+                              sx={{ fontSize: "16px", marginBottom: "5px" }}
                             >
-                              <strong>Description:</strong> {selectedItem.desc}
+                              <strong>Duration:</strong> {course.duration}
                             </Typography>
-                            {selectedItem.duration ? (
-                              <Typography
-                                sx={{
-                                  fontSize: "16px",
-                                  fontFamily: '"Source Sans Pro", sans-serif',
-                                  marginBottom: "10px",
-                                }}
-                              >
-                                <strong>Duration:</strong>{" "}
-                                {selectedItem.duration}
-                              </Typography>
-                            ) : (
-                              ""
-                            )}
-                            {selectedItem.mode ? (
-                              <Typography
-                                sx={{
-                                  fontSize: "16px",
-                                  fontFamily: '"Source Sans Pro", sans-serif',
-                                  marginBottom: "10px",
-                                }}
-                              >
-                                <strong>Mode:</strong> {selectedItem.mode}
-                              </Typography>
-                            ) : (
-                              ""
-                            )}
-                            {selectedItem.certification ? (
-                              <Typography
-                                sx={{
-                                  fontSize: "16px",
-                                  fontFamily: '"Source Sans Pro", sans-serif',
-                                  marginBottom: "10px",
-                                }}
-                              >
-                                <strong>Certification:</strong>{" "}
-                                {selectedItem.certification}
-                              </Typography>
-                            ) : (
-                              ""
-                            )}
+                          )}
+                          {course.mode && (
                             <Typography
-                              sx={{
-                                fontSize: "16px",
-                                fontFamily: '"Source Sans Pro", sans-serif',
-                                marginBottom: "10px",
-                              }}
+                              sx={{ fontSize: "16px", marginBottom: "5px" }}
                             >
-                              <strong>Price:</strong> {selectedItem.price}
+                              <strong>Mode:</strong> {course.mode}
                             </Typography>
-                          </Grid>
-                        </Grid>
-                      </DialogContent>
-                      <DialogActions>
-                        <Button
-                          sx={{
-                            background: "#ce1e24",
-                            color: "#fff",
-
-                            "&:hover": {
-                              background: "#a51a1f",
-                              transform: "scale(1.05)",
-                            },
-                          }}
-                          autoFocus
-                          onClick={handleClose}
-                        >
-                          Done
-                        </Button>
-                      </DialogActions>
-                    </>
-                  )}
-                </Dialog>
-              </Box>
-            </Grid>
+                          )}
+                          {course.certification && (
+                            <Typography
+                              sx={{ fontSize: "16px", marginBottom: "5px" }}
+                            >
+                              <strong>Certification:</strong>{" "}
+                              {course.certification}
+                            </Typography>
+                          )}
+                          <Typography
+                            sx={{ fontSize: "16px", marginBottom: "10px" }}
+                          >
+                            <strong>Price:</strong> {course.price}
+                          </Typography>
+                          <Divider />
+                        </Box>
+                      ))}
+                    </DialogContent>
+                    <DialogActions>
+                      <Button
+                        sx={{
+                          background: "#ce1e24",
+                          color: "#fff",
+                          "&:hover": {
+                            background: "#a51a1f",
+                          },
+                        }}
+                        onClick={handleClose}
+                      >
+                        Done
+                      </Button>
+                    </DialogActions>
+                  </>
+                )}
+              </Dialog>
+            </Box>
           );
         })}
       </Grid>
