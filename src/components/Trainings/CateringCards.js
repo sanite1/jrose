@@ -127,7 +127,7 @@ const CateringCards = () => {
                       with a wide range of essential skills to maintain safety
                       and compliance in the workplace. It covers food hygiene
                       regulations and best practices to ensure proper food
-                      handling, allergen management to minimize risks during
+                      handling, allergen management to minimise risks during
                       food preparation, and fire safety techniques focused on
                       kitchen-specific hazards. Additionally, staff will learn
                       safe lifting methods to prevent workplace injuries and
