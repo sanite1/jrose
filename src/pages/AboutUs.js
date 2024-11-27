@@ -139,7 +139,7 @@ const AboutUs = () => {
           }}
         >
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6} data-aos="fade-right">
+            {/* <Grid item xs={12} md={6} data-aos="fade-right">
               <img
                 src={jessica}
                 alt="Jessica Rose Thompson"
@@ -166,11 +166,11 @@ const AboutUs = () => {
               >
                 CEO & Founder
               </Typography>
-            </Grid>
+            </Grid> */}
             <Grid
               item
               xs={12}
-              md={6}
+              md={12}
               data-aos="fade-left"
               sx={{ display: "flex", alignItems: "center" }}
             >
